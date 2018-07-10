@@ -49,3 +49,5 @@ Dream big!
 
 ### Challenge 3: Recursive compose
 
+Replace the loop in your solution with a recursive call!
+it doesn't have to be a call to compose, but it should be recursive
