@@ -1,5 +1,7 @@
 # Compose a Composer
 
+### Challenge 1: Build a composer
+
 Copy and paste the code below into `repl.it` or an editor you like to work with,
 you need to write the `compose`'s function code.
 Don't change any of the example code, only change compose itself
@@ -38,3 +40,12 @@ var addStars = function(arr) {
 var funs3 = compose(addStars, splitSpaces, concatGreat);
 funs3("Hummus");
 ```
+
+### Challenge 2: Have fun with examples
+
+Try to call compose with your own functions, anything is valid as long as you
+pass the right arguments.
+Dream big!
+
+### Challenge 3: Recursive compose
+
