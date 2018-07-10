@@ -1,5 +1,9 @@
 # Compose a Composer
 
+@haydnba and myself (@shiryz) would like to challenge you to write a compose
+function, we have collaborated to create a fun and easy way to introduce you to
+this function and all its capabilities.
+
 ### Challenge 1: Build a composer
 
 Copy and paste the code below into `repl.it` or an editor you like to work with,
