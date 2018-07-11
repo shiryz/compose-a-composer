@@ -11,26 +11,27 @@ you need to write the `compose`'s function code.
 Don't change any of the example code, only change compose itself
 
 ```js
+/* 
+  Input: Lots of functions (fn1, fn2, fn3...) 
+  Output: a function which is a composition of the input fn1(fn2(fn3(...)))
+*/
 function compose() {
   // Change Me!
 }
 
-var funs1 = compose(
-  Math.round,
-  Math.abs
-);
-funs1(-87.456);
+var funs1 = compose(Math.round, Math.abs); // Conposing a function that executes Math.round(Math,abs(arg));
+funs1(-87.456); // calling the function with the argument -87.456
 // -------------------------
-var power = function(x) {
+
+// power takes a number x and returns x^2
+var power2 = function(x) {
   return Math.pow(x, 2);
 };
 
-var funs2 = compose(
-  power,
-  Math.abs
-);
+var funs2 = compose(power2, Math.abs); // Composition of power2(Math.abs(arg));
 funs2(-2);
 // -------------------------
+
 var concatGreat = function(str) {
   return str.concat(' is Great!');
 };
@@ -47,13 +48,16 @@ var addStars = function(arr) {
     .join(' ');
 };
 
-var funs3 = compose(
-  addStars,
-  splitSpaces,
-  concatGreat
-);
-funs3('Hummus');
+var funs3 = compose(addStars, splitSpaces, concatGreat); // Composition of addStars(splitSpaces(concatGreat(arg)));
+funs3("Hummus");
 ```
+__Hints__
+
+Try to struggle with this for a while by yourself before resulting to these hints:
+- Check the [`arguments`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments) object which gets passed to every function, how can you use it to compose all the functions together?
+- Now that you're using `arguments`, remember that you can't use a `forEach` to iterate over these functions but you can use the old-fashioned `for` loop or turn the object into an array.
+- Think about the direction of the for loop.
+- Remember to return a function from `compose, funs1, funs2 and funs3` all need to be functions.
 
 ### Challenge 2: Have fun with examples
 
