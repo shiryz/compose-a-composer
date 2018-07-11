@@ -11,6 +11,10 @@ you need to write the `compose`'s function code.
 Don't change any of the example code, only change compose itself
 
 ```js
+/* 
+  Input: Lots of functions (fn1, fn2, fn3...) 
+  Output: a function which is a composition of the input fn1(fn2(fn3(...)))
+*/
 function compose() {
   // Change Me!
 }
@@ -47,6 +51,13 @@ var addStars = function(arr) {
 var funs3 = compose(addStars, splitSpaces, concatGreat); // Composition of addStars(splitSpaces(concatGreat(arg)));
 funs3("Hummus");
 ```
+__Hints__
+
+Try to struggle with this for a while by yourself before resulting to these hints:
+- Check the [`arguments`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments) object which gets passed to every function, how can you use it to compose all the functions together?
+- Now that you're using `arguments`, remember that you can't use a `forEach` to iterate over these functions but you can use the old-fashioned `for` loop or turn the object into an array.
+- Think about the direction of the for loop.
+- Remember to return a function from `compose, funs1, funs2 and funs3` all need to be functions.
 
 ### Challenge 2: Have fun with examples
 
