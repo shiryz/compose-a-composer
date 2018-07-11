@@ -1,14 +1,14 @@
-# Compose a Composer
+# Compose a Composer :musical_score:
 
 @haydnba and myself (@shiryz) would like to challenge you to write a compose
 function, we have collaborated to create a fun and easy way to introduce you to
 this function and all its capabilities.
 
-### Challenge 1: Build a composer
+### Challenge 1: Build a composer :nut_and_bolt:
 
 Copy and paste the code below into `repl.it` or an editor you like to work with,
 you need to write the `compose`'s function code.
-Don't change any of the example code, only change compose itself
+Don't change any of the example code, only change compose itself :memo:
 
 ```js
 /* 
@@ -51,7 +51,8 @@ var addStars = function(arr) {
 var funs3 = compose(addStars, splitSpaces, concatGreat); // Composition of addStars(splitSpaces(concatGreat(arg)));
 funs3("Hummus");
 ```
-__Hints__
+
+__Hints__ :speak_no_evil:
 
 Try to struggle with this for a while by yourself before resulting to these hints:
 - Check the [`arguments`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments) object which gets passed to every function, how can you use it to compose all the functions together?
@@ -59,18 +60,18 @@ Try to struggle with this for a while by yourself before resulting to these hint
 - Think about the direction of the for loop.
 - Remember to return a function from `compose, funs1, funs2 and funs3` all need to be functions.
 
-### Challenge 2: Have fun with examples
+### Challenge 2: Have fun with examples :smirk_cat:
 
 Try to call compose with your own functions, anything is valid as long as you
 pass the right arguments.
-Dream big!
+Dream big! :sleeping:
 
-### Challenge 3: Recursive compose
+### Challenge 3: Recursive compose :curly_loop:
 
 Replace the loop in your solution with a recursive call!
 it doesn't have to be a call to compose, but it should be recursive
 
-### Challenge 4: Async compose
+### Challenge 4: Async compose :fire::fire::fire:
 
 If you have implemented function composition using recursion, you might have
 the feeling that this would be possible with callbacks - try to refactor the
