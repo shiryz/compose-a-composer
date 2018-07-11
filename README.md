@@ -6,8 +6,8 @@ this function and all its capabilities.
 
 ### Challenge 1: Build a composer :nut_and_bolt:
 
-Copy and paste the code below into `repl.it` or an editor you like to work with,
-you need to write the `compose`'s function code.
+Copy and paste the code below into `repl.it` or an editor you like to work with, you need to write the `compose`'s function code.
+
 Don't change any of the example code, only change compose itself :memo:
 
 ```js
@@ -64,19 +64,21 @@ Try to struggle with this for a while by yourself before resulting to these hint
 
 Try to call compose with your own functions, anything is valid as long as you
 pass the right arguments.
+
 Dream big! :sleeping:
 
 ### Challenge 3: Recursive compose :curly_loop:
 
-Replace the loop in your solution with a recursive call!
-it doesn't have to be a call to compose, but it should be recursive
+Replace the loop in your solution with a recursive function call!
+
+It doesn't have to be a call to compose, but it should be recursive
 
 ### Challenge 4: Async compose :fire::fire::fire:
 
 If you have implemented function composition using recursion, you might have
 the feeling that this would be possible with callbacks - try to refactor the
 recursive solution so that it can handle asynchrony. The following code borrows
-a lot from the **LEGENDARY** ![waterfall function morning challenge](https://github.com/foundersandcoders/mc-waterfall-chaser#morning-challenge-implement-a-waterfall-function)
+a lot from the **LEGENDARY** [waterfall function morning challenge](https://github.com/foundersandcoders/mc-waterfall-chaser#morning-challenge-implement-a-waterfall-function)
 brought to us by Eoin McCarthy and Besart Hoxhaj!
 
 ```js
