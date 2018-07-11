@@ -15,16 +15,19 @@ function compose() {
   // Change Me!
 }
 
-var funs1 = compose(Math.round, Math.abs);
-funs1(-87.456);
+var funs1 = compose(Math.round, Math.abs); // Conposing a function that executes Math.round(Math,abs(arg));
+funs1(-87.456); // calling the function with the argument -87.456
 // -------------------------
-var power = function(x) {
+
+// power takes a number x and returns x^2
+var power2 = function(x) {
   return Math.pow(x, 2);
 };
 
-var funs2 = compose(power, Math.abs);
+var funs2 = compose(power2, Math.abs); // Composition of power2(Math.abs(arg));
 funs2(-2);
 // -------------------------
+
 var concatGreat = function(str) {
   return str.concat(" is Great!");
 };
@@ -41,7 +44,7 @@ var addStars = function(arr) {
     .join(" ");
 };
 
-var funs3 = compose(addStars, splitSpaces, concatGreat);
+var funs3 = compose(addStars, splitSpaces, concatGreat); // Composition of addStars(splitSpaces(concatGreat(arg)));
 funs3("Hummus");
 ```
 
