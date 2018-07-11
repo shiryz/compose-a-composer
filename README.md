@@ -65,7 +65,7 @@ Try to struggle with this for a while by yourself before resulting to these hint
 Try to call compose with your own functions, anything is valid as long as you
 pass the right arguments.
 
-Dream big! :sleeping:
+Dream big! :cloud:
 
 ### Challenge 3: Recursive compose :curly_loop:
 
