@@ -21,4 +21,4 @@ function compose() {
 // };
 
 // ES6 with reduce
-// const compose = (...fns) => input => fns.reduce((acc, fn) => fn(acc), input);
+// const compose = (...fns) => input => fns.reduceRight((acc, fn) => fn(acc), input);
